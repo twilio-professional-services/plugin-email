@@ -1,0 +1,26 @@
+{
+  "name": "twilio-flex-email-server",
+  "version": "1.0.0",
+  "description": "demo server for ingesting Twilio SendGrid e-mails and sending to Twilio Flex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Amps",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.2.2",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "dotenv": "^8.2.0",
+    "email-addresses": "^3.1.0",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "parse-headers": "^2.0.3",
+    "showdown": "^1.9.1",
+    "string": "^3.3.3",
+    "turndown": "^6.0.0",
+    "twilio": "^3.48.1"
+  }
+}
