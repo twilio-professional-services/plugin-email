@@ -65,4 +65,4 @@ appConfig.js
 pluginsService.js
 build/
 server/node_modules
-
+.DS_Store
