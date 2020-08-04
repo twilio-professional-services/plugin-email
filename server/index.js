@@ -9,7 +9,6 @@ const extractHtmlContent = require('./extractHtmlContent.js');
 
 sgMail.setApiKey(process.env.SG_MAIL_KEY);
 
-console.log('hi');
 // Express setup
 const express = require('express');
 const app = express();
@@ -151,7 +150,7 @@ app.post('/flexflow', (req, res) => {
       };
 
       sgMail.send(msg).then(e => {
-        console.log('sent email');
+        console.log('sent email', e);
       }).catch(e => {
         console.error('failed to send email', e);
       })

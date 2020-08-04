@@ -51,4 +51,34 @@ If you followed the steps above correctly, sending an e-mail should now yield so
 ![inbound screenshot](/screenshots/inbound-screenshot-no-plugin.png?raw=true "Inbound e-mail to Flex")
 
 Of course, Flex doesn't know how to render tasks for our new e-mail channel yet, so we can't see the contents. For that, let's add a plugin!
-  
+
+## Building the plugin
+
+In the root of the `plugin-email` directory execute
+
+* npm install
+* npm run build
+
+Then upload the resulting distribution file to [Twilio Assets](https://www.twilio.com/console/assets/public).
+
+It should now look like this:
+
+![Flex Email UI](/screenshots/email-ui.png?raw=true "Flex Email UI")
+
+## Changing the URL of your server
+
+If you find yourself wanting to update the URL for your express server, you'll need to update the URL in two places:
+
+* Replace the [inbound parse webhook](https://app.sendgrid.com/settings/parse) with your new URL
+* Update the FlexFlow with your new URL:
+
+```bash
+curl -X POST https://flex-api.twilio.com/v1/FlexFlows/FOxxx \
+  --data-urlencode 'Integration.Url=https://yourtunnel.ngrok.io/flexflow' \
+  -u ACxxxxxxxx:[AUTH_TOKEN]
+  ```
+
+## Authors
+
+* Martin Amps
+* Trenton McManus

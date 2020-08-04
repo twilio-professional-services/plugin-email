@@ -20,11 +20,15 @@
   },
   "dependencies": {
     "craco-config-flex-plugin": "^3.13.5",
+    "draft-js": "^0.11.6",
+    "draftjs-to-markdown": "^0.6.0",
     "flex-plugin": "^3.13.2",
     "flex-plugin-scripts": "^3.13.5",
     "react": "16.5.2",
     "react-dom": "16.5.2",
+    "react-draft-wysiwyg": "^1.14.5",
     "react-emotion": "9.2.6",
+    "react-markdown": "^4.3.1",
     "react-scripts": "3.4.1"
   },
   "devDependencies": {
