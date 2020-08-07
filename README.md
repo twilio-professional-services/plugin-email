@@ -43,7 +43,7 @@ Hopefully you've already cloned this repository and ran `npm install`. Next:
 * Configure your environment variables `cp .env.example .env`
   * We noted down the Flex Flow Sid and SendGrid API key already from the steps above
   * Here are links to grab the [account sid and auth token](https://www.twilio.com/console), your [workspace and workflow sid](https://www.twilio.com/console/taskrouter/workspaces) and [flex chat service sid](https://www.twilio.com/console/chat/dashboard).
-* Run the server `node server.js`
+* Run the server `node index.js`
 * Start your tunnel `ngrok http 8080`
 
 If you followed the steps above correctly, sending an e-mail should now yield some logs and a task within Flex.
