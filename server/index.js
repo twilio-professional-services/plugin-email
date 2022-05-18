@@ -37,7 +37,10 @@ app.post('/inbound', multer().any(), (req, res) => {
   console.log('received inbound email');
 
   const email = req.body;
+  console.log("email.headers => " + JSON.stringify(email.headers));
   const parsedHeaders = utils.getParsedHeaders(email.headers);
+  console.log("parsedHeaders => " + JSON.stringify(parsedHeaders));
+  console.log("parsedHeaders.from => " + JSON.stringify(parsedHeaders.from));
   const fromAddress = parsedHeaders.from.address;
   const fromName = parsedHeaders.from.name;
 
