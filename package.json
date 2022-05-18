@@ -1,6 +1,6 @@
 {
   "name": "plugin-email",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "bootstrap": "flex-plugin check-start",
@@ -11,7 +11,7 @@
     "deploy": "flex-plugin deploy",
     "eject": "flex-plugin eject",
     "info": "flex-plugin info",
-    "postinstall": "npm run bootstrap",
+    "postinstall": "flex-plugin pre-script-check",
     "list": "flex-plugin list",
     "remove": "flex-plugin remove",
     "prestart": "npm run bootstrap",
@@ -19,35 +19,18 @@
     "test": "flex-plugin test --env=jsdom"
   },
   "dependencies": {
-    "craco-config-flex-plugin": "^3.13.5",
     "draft-js": "^0.11.6",
     "draftjs-to-markdown": "^0.6.0",
-    "flex-plugin": "^3.13.2",
-    "flex-plugin-scripts": "^3.13.5",
+    "flex-plugin": "^4.0.0",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-draft-wysiwyg": "^1.14.5",
-    "react-emotion": "9.2.6",
     "react-markdown": "^4.3.1",
-    "react-scripts": "3.4.1"
+    "@twilio/flex-plugin-scripts": "5.0.6",
+    "react-emotion": "9.2.12"
   },
   "devDependencies": {
     "@twilio/flex-ui": "^1",
-    "babel-polyfill": "^6.26.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
-    "rimraf": "^3.0.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "react-test-renderer": "16.5.2"
   }
 }

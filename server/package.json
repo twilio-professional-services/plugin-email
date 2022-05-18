@@ -21,6 +21,7 @@
     "showdown": "^1.9.1",
     "string": "^3.3.3",
     "turndown": "^6.0.0",
-    "twilio": "^3.48.1"
+    "twilio": "^3.48.1",
+    "twilio-cli": "^3.4.0"
   }
 }
