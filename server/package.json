@@ -15,7 +15,7 @@
     "cheerio": "^1.0.0-rc.3",
     "dotenv": "^8.2.0",
     "email-addresses": "^3.1.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "multer": "^1.4.2",
     "parse-headers": "^2.0.3",
     "showdown": "^1.9.1",
