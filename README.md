@@ -1,6 +1,8 @@
-# Twilio Flex / SendGrid Email Integration Example
+# Notice - Legacy Code
 
-<<TODO>>
+**This plugin is no longer maintained, as [email is now natively supported in Flex](https://www.twilio.com/docs/flex/email).**
+
+# Twilio Flex / SendGrid Email Integration Example
 
 ## Setting up SendGrid
 
